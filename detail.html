@@ -8,19 +8,35 @@
 <body>
     <div class="mainDiv">
         <div class="header">
-            <img src="./assests/images/logo.png" alt="logo" height="100" width="150">
-            <a href="./login.html" target="_blank" style="color: blue;">Login</a>
+            <a href="./index.html"><img src="./assests/images/logo.png" alt="logo" height="100" width="150"></a>
+            <a href="./login.html" style="color: blue;">Login</a>
         </div>
         <div class="content">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br>
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br><br>
 
-            <!--Book Now option for Hotel Booking-->
-            <a href="./payment.html">Book Now</a>
+            <!--Form for taking users details for Hotel Booking-->
+            <form action="./payment.html" method="get">
+                
+                <!--Make auto complete off so no one can see them-->
+                <label>Adults:</label>
+                <input type="number" min="1" name="Adults" required autocomplete="off"><br>
+                <label>Name:</label>
+                <input type="text" name="Name" required autocomplete="off"><br>
+                <label>From Date</label>
+                <input type="date" required name="From-Date" autocomplete="off"><br>
+                <label>To Date</label>
+                <input type="date" required name="To-Date" autocomplete="off"><br>
+                <label>Total Amount</label>
+                <input type="number" autocomplete="off"><br>
+                <button type="submit">Book Now</button>
+
+            </form>
 
             <h2 style="color: blue;">Radisson Blu Hotel</h2>
             <h4 style="color: black; font-style:italic;">Rating</h4>
             <h4 style="color: black; font-style: italic;">5 star</h4>
 
+            <!--Amentities of hotel provided-->
             <h3>AMENTITIES</h3>
             <li>Room service</li>
             <li>Restaurant</li>
@@ -28,6 +44,8 @@
             <li>Fitness center</li>
             <li>Pool</li>
 
+           
+           <!--Description of hotel-->
             <h3>DESCRIPTION</h3>
             <p>24 hour room service
                 Bathrobe slippers,

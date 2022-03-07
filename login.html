@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    
+
 </head>
+
 <body>
     <div>
         <div>
-            LOGIN
+            <form action="./index.html" method="get">
+                <!--Making Form for Users Login details-->
+
+                <label for="name">Username:</label>
+                <input type="text" name="name" placeholder="Enter Username" required autocomplete="off"><br><br>
+
+                <!--Make auto complete off so no one can see them-->
+                <label for="Password">Password:</label>
+                <input type="password" name="password" placeholder="Enter Password" required autocomplete="off"><br><br>
+
+                <button type="submit">Login</button>
+            </form>
         </div>
     </div>
 </body>
+
 </html>
