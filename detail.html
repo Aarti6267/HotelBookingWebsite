@@ -3,20 +3,25 @@
 
 <head>
 
+    <link rel="stylesheet" type="text/css" href="./styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/detail.css" />
+
 </head>
 
 <body>
     <div class="mainDiv">
-        <div class="header">
-            <a href="./index.html"><img src="./assests/images/logo.png" alt="logo" height="100" width="150"></a>
-            <a href="./login.html" style="color: blue;">Login</a>
-        </div>
+        <header>
+            <div class="header">
+                <a href="./index.html"><img src="./assests/images/logo.png" class="logo" alt="logo"></a>
+                <a href="./login.html" style="color: blue;">Login</a>
+            </div>
+        </header>
         <div class="content">
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"><br><br>
 
             <!--Form for taking users details for Hotel Booking-->
             <form action="./payment.html" method="get">
-                
+
                 <!--Make auto complete off so no one can see them-->
                 <label>Adults:</label>
                 <input type="number" min="1" name="Adults" required autocomplete="off"><br>
@@ -27,7 +32,7 @@
                 <label>To Date</label>
                 <input type="date" required name="To-Date" autocomplete="off"><br>
                 <label>Total Amount</label>
-                <input type="number" autocomplete="off"><br>
+                <input type="number" disabled autocomplete="off"><br>
                 <button type="submit">Book Now</button>
 
             </form>
@@ -44,8 +49,8 @@
             <li>Fitness center</li>
             <li>Pool</li>
 
-           
-           <!--Description of hotel-->
+
+            <!--Description of hotel-->
             <h3>DESCRIPTION</h3>
             <p>24 hour room service
                 Bathrobe slippers,
@@ -56,30 +61,36 @@
                 Coffee and tea</p>
 
         </div>
-        <div class="footer">
-            <!--Contact us for contact details-->
-            <!--Contact us redirects us to contact.html-->
-            <a href="./contact.html" target="_blank" style="color:blue; border: 2px;">Contact Us</a><br>
+        <footer>
+            <div class="footer">
 
-            <!--Facebook logo redirects to facebook official site-->
-            <a href="https://www.facebook.com" target="_blank"> <img src="./assests/images/facebook.png" height="20px"
-                    width="22px">
-            </a>
-
-            <!--Instagram logo redirects to instagram official site-->
-            <a href="https://www.instagram.com" target="_blank"> <img src="./assests/images/instagram.png" height="20px"
-                    width="22px">
-            </a>
-
-            <!--Twitter logo redirects to twitter official site-->
-            <a href="https://twitter.com" target="_blank"> <img src="./assests/images/twitter.png" height="20px"
-                    width="22px">
-            </a>
+                <!--Contact us for contact details-->
+                <!--Contact us redirects us to contact.html-->
+                <a href="./contact.html" style="color:blue; border: 2px;">Contact Us</a><br>
 
 
-            <!--Copywrite details-->
-            <p style="color: black; border: 4px;height: auto;">© 2020 ROOM SEARCH PVT. LTD</p>
-        </div>
+
+                <!--Facebook logo redirects to facebook official site-->
+                <a href="https://www.facebook.com" target="_blank"> <img src="./assests/images/facebook.png"
+                        class="social">
+                </a>
+
+                <!--Instagram logo redirects to instagram official site-->
+                <a href="https://www.instagram.com" target="_blank"> <img src="./assests/images/instagram.png"
+                        class="social">
+                </a>
+
+                <!--Twitter logo redirects to twitter official site-->
+                <a href="https://twitter.com" target="_blank"> <img src="./assests/images/twitter.png" class="social">
+                </a>
+
+
+
+
+                <!--Copywrite details-->
+                <p style="color: black; border: 4px;height: auto;">© 2020 ROOM SEARCH PVT. LTD</p>
+            </div>
+        </footer>
     </div>
 
 
