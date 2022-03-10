@@ -6,29 +6,31 @@
 
     <link rel="stylesheet" type="text/css" href="./styles/common.css" />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!--Body stsrts-->
     <!--Main div for index.html-->
-    <div class="mainDiv" id="indexDiv">
+    <div class="container" id="indexDiv">
 
         <!-- Header div for index.html-->
         <header>
             <div>
                 <!--Image logo-->
                 <img src="./assests/images/logo.png" class="logo" alt="logo">
-                <a href="./login.html" style="color: blue;">Login</a>
+                <a href="./login.html" class="login">Login</a>
             </div>
         </header>
+
 
         <!--Content div for index.html-->
         <div class="content">
 
             <!--Search Bar for Hotels-->
             <form id="searchBar">
-                <label id=""></label>
-                <input type="text" placeholder="city" autocomplete="off">
+                <label></label>
+                <input type="text" placeholder="city" autocomplete="off" id="name">
             </form>
 
             <a href="./list.html">
@@ -44,8 +46,9 @@
 
 
             <!--This option gives us view more option for hotels-->
-            <a href="./index.html" style="color: blue;">View more>></a>
+            <a href="./index.html"  class="view">View more>></a>
         </div>
+
 
         <!-- Footer div for index.html-->
         <footer>
@@ -53,7 +56,7 @@
 
                 <!--Contact us for contact details-->
                 <!--Contact us redirects us to contact.html-->
-                <a href="./contact.html" style="color:blue; border: 2px;">Contact Us</a><br>
+                <a href="./contact.html" class="contact">Contact Us</a><br>
 
 
 
@@ -74,7 +77,7 @@
 
 
                 <!--Copywrite details-->
-                <p style="color: black; border: 4px;height: auto;">© 2020 ROOM SEARCH PVT. LTD</p>
+                <p class="copywrite">© 2020 ROOM SEARCH PVT. LTD</p>
             </div>
         </footer>
     </div>

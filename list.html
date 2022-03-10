@@ -5,6 +5,7 @@
 
     <link rel="stylesheet" type="text/css" href="./styles/common.css" />
     <link rel="stylesheet" type="text/css" href="./styles/list.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,19 +13,22 @@
         <header>
             <div class="header">
                 <a href="./index.html"><img src="./assests/images/logo.png" class="logo" alt="logo"></a>
-                <a href="./login.html" style="color: blue;">Login</a>
+                <a href="./login.html" class="login">Login</a>
             </div>
         </header>
         <div class="content">
             
-            <!--using a tag for reference to list.html-->
-            <a href="#h1" style="color: blue;">
-                <li class="list">List View</li>
+            <div class="list">
+                <!--using a tag for reference to list.html-->
+            <a href="#h1" style="color: black; text-decoration: none; font-size: 25px;">
+                <b>List View</b>
             </a>
 
             <!--using a tag for reference to list.html-->
-            <a href="#map" style="color: blue;">
-                <li class="list">Map View</li><br>
+            <a href="#map" style="color: black; text-decoration: none; font-size: 25px;" class="mapview">
+                <b>Map View</b>
+            </a>
+            </div>
                 
                 
                 <a href="./detail.html">
@@ -32,10 +36,10 @@
                     <!--new div for Hotel1 -->
                     <div class="hotel1" id="h1">
                         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="img1">
-                        <h3 style="color: blue;">Raddision Blu Hotel</h3>
+                        <h3>Raddision Blu Hotel</h3>
 
-                        <h4 style="color: blue;">5 star</h4>
-                        <h4 style="color: blue;">New Delhi</h4>
+                        <h4>5 star</h4>
+                        <h4>New Delhi</h4>
                     </div>
 
                 </a>
@@ -71,7 +75,7 @@
         <footer>
             <div class="footer">
                 <!--Contact us for contact details-->
-                <a href="./contact.html" target="_blank" style="color:blue; border: 2px;">Contact Us</a><br>
+                <a href="./contact.html" target="_blank" class="contact">Contact Us</a><br>
 
 
 
@@ -92,7 +96,7 @@
 
 
                 <!--Copywrite details-->
-                <p style="color: black; border: 4px;height: auto;">© 2020 ROOM SEARCH PVT. LTD</p>
+                <p  class="copywrite">© 2020 ROOM SEARCH PVT. LTD</p>
             </div>
         </footer>
     </div>
