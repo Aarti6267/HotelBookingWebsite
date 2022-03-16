@@ -18,30 +18,42 @@
             </div>
         </header>
         <div class="content">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="cdetail1"><br><br>
+           
+          
 
-           <div class="cdetail2">
-                <!--Form for taking users details for Hotel Booking-->
-            <form action="./payment.html" method="get">
+           <table width="1100" border="5" class="center" style="margin-top: 5%;"> 
+               <tr>
+                   <td width="700" align="middle" style="margin-left: 5%;" >
+                    <div class="cdetailimage"> <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="cdetail1"><br><br></div>
 
-                <!--Make auto complete off so no one can see them-->
-                <label>Adults:</label>
-                <input type="number" min="1" name="Adults" required autocomplete="off"><br>
-                <label>Name:</label>
-                <input type="text" name="Name" required autocomplete="off"><br>
-                <label>From Date</label>
-                <input type="date" required name="From-Date" autocomplete="off"><br>
-                <label>To Date</label>
-                <input type="date" required name="To-Date" autocomplete="off"><br>
-                <label>Total Amount</label>
-                <input type="number"  autocomplete="off"><br>
-                <button type="submit">Book Now</button>
-
-            </form>
-           </div>
+                   </td>
+                   
+                   <td>
+                   <div class="cdetail2">
+                    <!--Form for taking users details for Hotel Booking-->
+                <form action="./payment.html" method="get">
+    
+                    <!--Make auto complete off so no one can see them-->
+                    <label>Adults:</label>
+                    <input type="number" min="1" name="Adults" required autocomplete="off"><br><br><br><br>
+                    <label>Name:</label>
+                    <input type="text" name="Name" required autocomplete="off"><br><br><br>
+                    <label>From Date</label>
+                    <input type="date" required name="From-Date" autocomplete="off"><br><br><br>
+                    <label>To Date</label>
+                    <input type="date" required name="To-Date" autocomplete="off"><br><br><br>
+                    <label>Total Amount</label>
+                    <input type="number"  autocomplete="off" disabled><br><br><br>
+                    <button type="submit">Book Now</button>
+    
+                </form>
+               </div>
+            </td>  
+               </tr>
+           </table>
 
            <div class="cdetail3">
-            <h2 style="color: blue;">Radisson Blu Hotel</h2>
+            <h2 style="color:black; text-decoration: none;">Radisson Blu Hotel</h2>
             <h4 style="color: black; font-style:italic;">Rating</h4>
             <h4 style="color: black; font-style: italic;">5 star</h4>
 
@@ -56,22 +68,39 @@
 
             <!--Description of hotel-->
             <h3>DESCRIPTION</h3>
-            <p>24 hour room service
+            <div style="padding-bottom: 5%;">24 hour room service
                 Bathrobe slippers,
                 Daily newspaper on request,
                 Welcome gifts:
                 Fruit basket,
                 1 bottle of mineral water,
-                Coffee and tea</p>
+                Coffee and tea</div>
 
-           </div>
         </div>
         <footer>
-            <div class="footer">
-
+           <!-- <div class="footer"> -->
+            <div style="width:25%">
                 <!--Contact us for contact details-->
                 <!--Contact us redirects us to contact.html-->
-                <a href="./contact.html" class="contact">Contact Us</a><br>
+                <a href="./contact.html" class="contact">Contact Us</a>
+            </div>
+
+            <div style="width:50%">
+                <!--Copywrite details-->
+                <div class="copywrite">© 2020 ROOM SEARCH PVT. LTD</div>
+            </div>
+
+            <div style="width:22%; margin-right: 10%;" > 
+                </a>
+                <!--Twitter logo redirects to twitter official site-->
+                <a href="https://twitter.com" target="_blank"> <img src="./assests/images/twitter.png" class="social"
+                        id="twitter">
+                </a>
+
+                <!--Instagram logo redirects to instagram official site-->
+                <a href="https://www.instagram.com" target="_blank"> <img src="./assests/images/instagram.png"
+                        class="social ">
+                </a>
 
 
 
@@ -79,22 +108,11 @@
                 <a href="https://www.facebook.com" target="_blank"> <img src="./assests/images/facebook.png"
                         class="social">
                 </a>
-
-                <!--Instagram logo redirects to instagram official site-->
-                <a href="https://www.instagram.com" target="_blank"> <img src="./assests/images/instagram.png"
-                        class="social">
-                </a>
-
-                <!--Twitter logo redirects to twitter official site-->
-                <a href="https://twitter.com" target="_blank"> <img src="./assests/images/twitter.png" class="social">
-                </a>
-
-
-
-
-                <!--Copywrite details-->
-                <p  class="copywrite">© 2020 ROOM SEARCH PVT. LTD</p>
             </div>
+
+
+
+
         </footer>
     </div>
 
