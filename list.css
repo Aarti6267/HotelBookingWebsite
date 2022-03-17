@@ -1,0 +1,71 @@
+.img1 {
+    height: 200px;
+    width: 250px;
+}
+.img1::after{
+    content: "";
+  clear: both;
+  display: table;
+}
+
+.list {
+    margin-left: 40%;
+    margin-top: 1%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mapview {
+    padding: 4%;
+    
+}
+
+   /* .map display: none;  */
+
+
+.hotel1 {
+    background-color: lightgrey;
+    margin: 2%;
+    width: 40%;
+    height: auto;
+    float: left;
+  
+  padding: 5px;
+  display: flex;
+}
+
+.hotel2 {
+    background-color: lightgrey;
+    margin: 2%;
+    width: 40%;
+    height: auto;
+    float: left;
+  
+  padding: 5px;
+  display: flex;
+}
+
+
+.hotel3 {
+    background-color: lightgray;
+    margin: 2%;
+    width: 40%;
+    height: auto;
+    float: left;
+  
+  padding: 5px;
+  display: flex;
+}
+
+.hotel1:hover{
+  background-color: rosybrown;
+}
+.hotel2:hover{
+  background-color: rosybrown;
+}
+.hotel3:hover{
+  background-color: rosybrown;
+}
+
+.checked {
+  color: orange;
+}

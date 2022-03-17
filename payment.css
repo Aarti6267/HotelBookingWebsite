@@ -1,0 +1,51 @@
+
+
+#ipay1{
+    height: 270px;
+    width: 300px;
+    
+
+}
+
+.paynow{
+  text-decoration: none;
+  color: black;
+  text-decoration: solid;
+
+}
+.cpay1{
+  background-color: gray;
+  display: flex;
+  height: auto;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+
+}
+
+.pay{
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 6%;
+}
+
+.cpay2{
+  margin: 4%;
+}
+
+.cpay3{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45%;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-radius: 10%;
+    background-color: rosybrown;
+}

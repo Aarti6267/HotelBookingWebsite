@@ -1,0 +1,27 @@
+.cdetail1{
+    height: 400px;
+    width: 400px;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+
+
+.cdetail3{
+    margin: 1% 4% 2% 4%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #book{
+    margin-left: 35%;
+    margin-bottom: 2%;
+}
+
+.checked {
+    color: orange;
+  }
