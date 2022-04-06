@@ -35,6 +35,9 @@
     border-radius: 25px;
     display: flex;
     flex-direction: column;
+
+
+    
     justify-content: center;
     text-align: center;
     color: #fff;
@@ -80,3 +83,6 @@
     font-family: 'Ubuntu', sans-serif;
 
 }
+
+
+#more {display: none;}
