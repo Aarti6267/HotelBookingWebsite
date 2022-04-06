@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="./styles/common.css" />
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-   
+    <script src="./scripts/index.js"></script>
+    <script defer src="./scripts/common.js"></script>
+    
 
     <style>
         .image-container {
@@ -76,37 +78,53 @@
                 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; float: right; margin-right: 2%; margin-top: 1.5%; background-color: white;color: black;" class="btn-group-sm">Login</button>
             </div>
           
-            <div id="id01" class="modal">
+            <main id="main-holder">
+
+                <div id="id01" class="modal">
   
-                <form class="modal-content animate" action="/action_page.php" method="post" style="max-width: 50%;">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                    <div>
-                      <h2 style="font-style: italic;">
-                          Please Login
-                      </h2>
-                  </div>
-              
-                  <div class="cont">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required><br>
-              
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required><br>
-                      
-                    <button type="submit">Login</button>
-                    <label>
-                      <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                  </div>
-              
-                  <div class="cont" style="background-color:#f1f1f1">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
-                  </div>
+                    <form class="modal-content animate" style="max-width: 50%;" id="login-form">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                        <div>
+                          <h2 style="font-style: italic;"  id="login-header" >
+                              Please Login
+                          </h2>
+                      </div>
+
+
+
+                      <div id="login-error-msg-holder">
+                        <p id="login-error-msg" >Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                      </div>
+
+
+
+
                   
-                </form>
-            </div>
+                      <div class="cont">
+                        <label for="uname" ><b>Username</b></label>
+                        <input  class="login-form-field"  id="username-field" type="text" placeholder="Enter Username" name="uname" required><br>
+                  
+                        <label for="psw" ><b>Password</b></label>
+                        <input class="login-form-field"  id="password-field" type="password" placeholder="Enter Password" name="psw" required><br>
+                          
+                        <button type="submit"  id="login-form-submit">Login</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                  
+                      <div class="cont" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                      
+                    </form>
+                </div>
+
+
+
+            </main>
 
             
             
@@ -121,6 +139,8 @@
                 <label></label>
                 <input type="text" placeholder="city" autocomplete="off" id="name">
             </form>
+
+          <span>
 
             <div class="image-container">
 
@@ -159,12 +179,24 @@
 
 
 
+            <span id="dots">  
+
+
+           </span>
 
 
 
 
 
-            <div class="image-container">
+            <span id="more">
+            
+
+
+
+
+
+
+                <div class="image-container">
 
                 <div class="gallery">
                     <a class="gallery-item" href="#"  style="text-decoration: none;">
@@ -200,6 +232,9 @@
             </div>
 
 
+        </span>
+
+    </span>
 
 
             <!-- <a href="./list.html">
@@ -224,7 +259,7 @@
 
             <!--This option gives us view more option for hotels-->
             <div style="text-align: center; margin-bottom: 15px;">
-                <button type="button" class="btn btn-secondary">View more</button>
+                <button onclick="myFunction()" id="myBtn" type="button" class="btn btn-secondary">View more</button>
             </div>
 
         </div>

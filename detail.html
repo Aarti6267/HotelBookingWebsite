@@ -3,6 +3,7 @@
 
 <head>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./styles/common.css" />
     <link rel="stylesheet" type="text/css" href="./styles/detail.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -10,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/detail.js"></script>
+  
 
 </head>
 
@@ -105,15 +109,15 @@
     
                     <!--Make auto complete off so no one can see them-->
                     <label>Adults:</label>
-                    <input type="number" min="1" name="Adults" required autocomplete="off"><br><br>
+                    <input type="number" min="1" name="Adults" required autocomplete="off" id="inputAdult"><br><br>
                     <label>Name:</label>
                     <input type="text" name="Name" required autocomplete="off"><br><br>
                     <label>From Date</label>
-                    <input type="date" required name="From-Date" autocomplete="off"><br><br>
+                    <input type="date" required name="From-Date" autocomplete="off" id="inputFromDate"><br><br>
                     <label>To Date</label>
-                    <input type="date" required name="To-Date" autocomplete="off"><br><br>
+                    <input type="date" required name="To-Date" autocomplete="off" id="inputToDate"><br><br>
                     <label>Total Amount</label>
-                    <input type="number"  autocomplete="off" disabled><br><br><br>
+                    <input type="number"  autocomplete="off" id="inputTotal"><br><br><br>
                     <a href="./payment.html"><button type="button" class="btn btn-outline-success" id="book">Book Now</button></a>
     
                 </form>
