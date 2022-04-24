@@ -1,3 +1,6 @@
+/*Final view */
+
+
 html,
 body {
 
@@ -210,9 +213,19 @@ input[type=text], input[type=password] {
 
 
 
+  #map {
+    height: 100%;
+    }
 
 
 
+
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    }
 
 
   

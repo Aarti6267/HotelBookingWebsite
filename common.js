@@ -1,18 +1,21 @@
-//These files are empty now.....
+//Final view 
 
-const loginForm = document.getElementById("login-form");
-const loginButton = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
 
-loginButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
+function Mylognbtn() {
+    modal.style.display = "none";
+    var username = document.getElementById('user').value;
+    var pass = document.getElementById('password').value;
 
-    if (username === "admin" && password === "admin") {
-        alert("You have successfully logged in.");
-        location.reload();
-    } else {
-        loginErrorMsg.style.opacity = 1;
+
+    var User = localStorage.getItem('User');
+    var password = localStorage.getItem('password');
+
+    if(username == User && pass == password){
+        alert("Login Sucessfully");
     }
-})
+
+    else{
+        alert("Credential mismatch");
+    }
+
+}
